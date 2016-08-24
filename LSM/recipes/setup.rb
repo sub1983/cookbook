@@ -5,3 +5,7 @@ end
   cwd '/tmp/'
   command 'tar -zxvf lsm.tar.gz'
   end
+  execute 'install lsm' do 
+  cwd '/tmp'
+  command 'sh /tmp/lsm-0.6/install.sh '
+  end
