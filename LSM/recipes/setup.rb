@@ -4,4 +4,4 @@ end
   execute 'untar_file' do
   cwd '/tmp/'
   command 'tar -zxvf lsm.tar.gz'
-  ende21
+  end
