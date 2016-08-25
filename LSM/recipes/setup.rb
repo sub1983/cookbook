@@ -9,5 +9,5 @@ end
 
 execute 'install lsm ' do 
   cwd '/tmp'
-  command 'sh /tmp/lsm-"#{node[lsm][version]}"/install.sh '
+  command "sh /tmp/lsm-#{node[lsm][version]}/install.sh "
 end
