@@ -7,7 +7,7 @@ execute 'untar_file' do
   command 'tar -zxvf lsm.tar.gz'
 end
 
-execute "install lsm #{node[lsm][version]}" do 
+execute 'install lsm ' do 
   cwd '/tmp'
   command "sh /tmp/lsm-#{node[lsm][version]}/install.sh "
 end
