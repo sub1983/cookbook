@@ -4,7 +4,7 @@ end
 
 execute 'untar_file' do
   cwd '/tmp/'
-  command "tar -zxvf #{node['tomcat']['version']}.tar.gz"
+  command "tar -zxvf apache-tomcat-#{node['tomcat']['version']}.tar.gz"
 end
 
 #execute " install lsm-#{node['lsm']['version']} " do 
