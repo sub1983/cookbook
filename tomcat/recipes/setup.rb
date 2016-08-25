@@ -1,4 +1,4 @@
-remote_file "/tmp/tomcat#{node['tomcat']['version']}.tar.gz" do
+remote_file "/tmp/apache-tomcat-#{node['tomcat']['version']}.tar.gz" do
   source 'http://mirror.fibergrid.in/apache/tomcat/tomcat-8/v8.5.4/bin/apache-tomcat-8.5.4.tar.gz'
 end    
 
